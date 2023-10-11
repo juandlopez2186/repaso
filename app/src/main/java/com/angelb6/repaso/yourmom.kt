@@ -24,13 +24,24 @@ fun mult(n1:Double,n2:Double):Double{
     var tol=n1*n2;
     return tol
 }
-
-fun main() {
-    saludo(n="andres")
-
-    println("el resultado de la multiplicacion ${sumar()}")
-}
 fun cmen(n1:Double,n2:Double)= if (n1<n2)n1 else n2
+
+fun mayor(){
+    fun calmayor(n1: Double,n2: Double)=if (n1>n2)n1 else n2
+    for (i in 1..5){
+        println("ingrese el numero 1")
+        val nu1= readln().toDouble()
+        println("ingrese el numero 2")
+        val nu2= readln().toDouble()
+        println("el mayor de los dos es ${calmayor(nu1,nu2)}")
+    }
+}
+fun main() {
+    //saludo(n="andres")
+
+    //println("el resultado de la multiplicacion ${sumar()}")
+    mayor()
+}
 
 
 
